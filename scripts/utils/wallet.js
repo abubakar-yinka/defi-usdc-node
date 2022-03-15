@@ -1,7 +1,7 @@
+require("dotenv").config();
 const ethers = require("ethers");
 
-const mnemonic =
-  "razor write recall valid dose survey subway window jungle mail concert asset";
+const mnemonic = process.env.MNEMONIC;
 
 const wallet = ethers.Wallet.fromMnemonic(mnemonic);
 
